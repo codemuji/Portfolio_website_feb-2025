@@ -19,7 +19,7 @@
                         style="font-family: 'Poppins', sans-serif;">Rajat Pradhan</h1>
 
                 </a>
-                <div class="hidden mt-14 flex flex-col space-y-8 md:mt-0 md:flex md:flex-row md:space-x-1 md:space-y-0">
+                <div class="hidden mt-14 flex-col space-y-8 md:mt-0 md:flex md:flex-row md:space-x-1 md:space-y-0">
                     <div class="relative flex flex-col">
                         <a href="aboutpage.html"
                             class="flex rounded-lg md:px-6 md:py-4 md: md:hover:text-gray-800 text-gray-800 transition-transform duration-300 hover:scale-110">
@@ -50,21 +50,20 @@
                 </div>
 
                 <!-- Hamburger Menu Starts Here -->
-                <a href="#" class="absolute right-5 md:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.75 12H20.25" stroke="#160042" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                        </path>
-                        <path d="M3.75 6H20.25" stroke="#160042" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                        </path>
-                        <path d="M3.75 18H20.25" stroke="#160042" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                        </path>
-                    </svg>
-                </a>
+                <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                  </button>
                 <!-- Hamburger Menu Ends Here -->
             </div>
+            <!-- mobile Menu -->
+       <div id="menu" class="hidden absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="aboutpage.html" class="transition-transform duration-300 hover:scale-110">About Me</a>
+        <a href="Featured_project.html" class="transition-transform duration-300 hover:scale-110">Featured Projects</a>
+        <a href="Contact_page.html" class="transition-transform duration-300 hover:scale-110">Contacts</a>
+        <a href="FAQs.html" class="transition-transform duration-300 hover:scale-110">FAQs</a>
+       </div>
         </nav>
     </section>
     <!-- Navbar Ends Here -->
@@ -451,6 +450,7 @@
     </footer>
     <!-- Footer Section Ends Here -->
 
+    <script src="script.js"></script>
 </body>
 
 </html>
